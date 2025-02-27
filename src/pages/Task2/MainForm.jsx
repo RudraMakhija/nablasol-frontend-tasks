@@ -78,7 +78,7 @@ const MainForm = () => {
       setCurrentStep((prev) => prev + 1);
     } else if (currentStep === steps.length) {
       alert('Form submitted successfully!');
-      setSubmitted(true); // Mark the form as submitted
+      setSubmitted(true);
     }
   };
 

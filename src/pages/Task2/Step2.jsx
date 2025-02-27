@@ -84,14 +84,21 @@ const Step2 = ({ formData, handleChange, handleAgreementToggle, errors }) => {
             >
               <HelpCircle size={16} />
             </button>
+
             {showTooltip && (
-              <div className="absolute right-0 z-10 mt-2 w-64 bg-gray-700 text-white text-sm rounded-md shadow-lg p-4">
-                <div className="font-medium">Dummy content here</div>
-                <button onClick={() => setShowTooltip(false)} className="absolute top-1 right-1 text-white">
-                  <X size={14} />
-                </button>
-              </div>
-            )}
+  <div className="absolute right-0 z-10 mt-2 w-64 bg-gray-700 text-white text-sm rounded-md shadow-lg p-4 opacity-65">
+    <div className="font-medium">
+      Local: Brands with distribution in 3 divisions or less OR multiple divisions but a total of 150 stores or less.
+      <br />
+      National: Brands with distribution in 4 or more divisions or in more than 150 stores.
+    </div>
+    <button onClick={() => setShowTooltip(false)} className="absolute top-1 right-1 text-white">
+      <X size={14} />
+    </button>
+  </div>
+)}
+
+
           </div>
           {errors.brandType && <div className="text-red-500 text-sm mt-1">{errors.brandType}</div>}
         </div>

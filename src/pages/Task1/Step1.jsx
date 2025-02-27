@@ -38,23 +38,25 @@ const Step1 = ({ formData, handleInputChange, handleNext}) => {
           Client
         </label>
         <div className="flex items-center space-x-2">
-          <select
-            id="client"
-            name="client"
-            value={formData.client}
-            onChange={handleInputChange}
-            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <option value="">Select a client</option>
-          </select>
-          <span className="text-gray-400">or</span>
-          <button
-            type="button"
-            className="flex items-center space-x-1 text-blue-500 border border-blue-500 rounded-md py-2 px-4 hover:bg-blue-100"
-          >
-            <span>+</span> New Client
-          </button>
-        </div>
+  <select
+    id="client"
+    name="client"
+    value={formData.client}
+    onChange={handleInputChange}
+    className="w-full h-12 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+  >
+    <option value="">Select a client</option>
+  </select>
+  <span className="text-gray-400">or</span>
+
+  <button
+    type="button"
+    className="flex items-center space-x-1 text-gray-400 border border-gray-300 rounded-md py-3 px-4 hover:bg-blue-100 h-12"
+  >
+    <span>+</span> New Client
+  </button>
+</div>
+
       </div>
       <div>
         <label htmlFor="dates" className="block text-sm font-medium mb-2">
