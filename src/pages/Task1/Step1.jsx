@@ -33,6 +33,7 @@ const Step1 = ({ formData, handleInputChange, handleNext}) => {
           className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
+      
       <div>
         <label htmlFor="client" className="block text-sm font-medium mb-2">
           Client
@@ -51,7 +52,7 @@ const Step1 = ({ formData, handleInputChange, handleNext}) => {
 
   <button
     type="button"
-    className="flex items-center space-x-1 text-gray-400 border border-gray-300 rounded-md py-3 px-4 hover:bg-blue-100 h-12"
+    className="flex items-center space-x-1 text-sm text-gray-400 border border-gray-300 rounded-md py-3 px-4 hover:bg-blue-100 h-12"
   >
     <span>+</span> New Client
   </button>
